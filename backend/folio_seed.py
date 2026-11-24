@@ -12,4 +12,4 @@ def seed(cx):
                     miss=hand and (number<5 or sample=='check')
                     cx.execute("INSERT INTO turn_events VALUES (%s,%s,%s,%s,%s,%s)",(piece,event,sample,lead,hand,miss))
         if piece=='FS-10':
-            grade(cx,piece)
+            grade(cx,piece,1)
