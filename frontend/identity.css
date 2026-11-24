@@ -1,0 +1,6 @@
+:root{--s-page:oklch(94% .021 45);--s-panel:oklch(97% .016 44);--s-accent:oklch(37% .115 358);--s-ink:oklch(24% .046 356)}
+.folio{display:grid;grid-template-columns:1fr 1fr;gap:1px;border:1px solid var(--s-line);background:var(--s-line)}
+.folio article{background:var(--s-panel);padding:1rem}
+.signal{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;padding:1rem;background:var(--s-panel);border-bottom:3px solid var(--s-accent)}
+.music-key{border-left:3px solid var(--s-accent);padding-left:1rem}
+@media(max-width:600px){.folio,.signal{grid-template-columns:1fr}}
